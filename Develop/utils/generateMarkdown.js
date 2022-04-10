@@ -1,6 +1,8 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
+// Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+const renderLicenseBadge = license => {
+
+};
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -22,7 +24,7 @@ const generateMarkdown = data => {
   - [Installation](#installation)
   - [Usage](#usage)
   - [Contribution](#contribution)
-  - [Test](#test)
+  - [Test](#tests)
   - [Questions](#questions)
   - [License](#license)
 
@@ -39,11 +41,11 @@ const generateMarkdown = data => {
   ${data.tests}
 
   ## Questions
-  If you have any questions regarding this project, you can explore my repository at github.com/${data.username}, and for further question, you can contact me via email at ${data.email}.
+  If you have any questions regarding this project, you can explore my repository at [github.com/${data.username}](www.github.com/${data.username}), and for further question, you can contact me via email at ${data.email}.
 
   ## License
 
   `;
-}
+};
 
-module.exports = generateMarkdown(data);
+module.exports = generateMarkdown;

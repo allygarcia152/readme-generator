@@ -119,7 +119,7 @@ const questions = () => {
         if (licenseInput) {
           return true;
         } else {
-          console.log('Please enter your email address.');
+          console.log('You did not select a license for this project. The "License" section of your README.md file will be blank.');
           return false;
         }
       }
@@ -145,7 +145,7 @@ const writeToFile = fileContent => {
       });
     });
   });
-}
+};
 
 //Create a function to initialize app
 const init = () => {
@@ -162,7 +162,7 @@ const init = () => {
   .catch(err => {
     console.log(err);
   });
-}
+};
 
 // Function call to initialize app
 init();

@@ -4,7 +4,7 @@ const generateMarkdown = require('./utils/generateMarkdown');
 const fs = require('fs');
 
 //Create an array of questions for user input
-const questions = () => {
+const questions = readmeData => {
   return inquirer.prompt([
     {
       type: 'input',
@@ -147,12 +147,21 @@ const writeToFile = fileContent => {
   });
 }
 
-// // TODO: Create a function to initialize app
-// const init = () => {
+//Create a function to initialize app
+const init = () => {
+  questions()
+  .then(readmeData => {
+    return generateMarkdown(readmeData);
+  })
+  .then(pageREADME => {
+    return writeToFile(pageREADME);
+  })
+  .catch(err => {
+    console.log(err);
+  });
+}
 
-// }
+// Function call to initialize app
+init();
 
-// // Function call to initialize app
-// init();
-
-// module.exports = {writeToFile};
+module.exports = {writeToFile};

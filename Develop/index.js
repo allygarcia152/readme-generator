@@ -73,7 +73,7 @@ const questions = () => {
     },
     {
       type: 'input',
-      name: 'test',
+      name: 'tests',
       message: 'Provide instructions on how to run all tests on your project. (Required)',
       validate: testInput => {
         if (testInput) {
@@ -156,9 +156,6 @@ const init = () => {
   .then(pageREADME => {
     return writeToFile(pageREADME);
   })
-  // .then(writeFileResponse => {
-  //   console.log(writeFileResponse);
-  // })
   .catch(err => {
     console.log(err);
   });

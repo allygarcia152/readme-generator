@@ -14,7 +14,7 @@ To use this applicaiton, open index.js in a code editor. In your command line, g
 ## Usage
 Once the user has run 'node index' in the command line, a series of questions will be presented for the user to answer. The user must give a project title, description, installation instructions, usage instructions, contribution guidelines, test instructions, a GitHub username, and email address.
 
-[Click here to see a video of the application being used]()
+[Click here to see a video of the application being used](https://www.awesomescreenshot.com/video/8337792?key=26e34bc552b89077e39a5e0a8fe9cc1e)
 
 Repository Link: [Professional README generator repository](https://github.com/allygarcia152/readme-generator/)
 
